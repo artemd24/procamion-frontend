@@ -1,0 +1,27 @@
+.responseButtonRow {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+
+  button {
+    max-width: 89px;
+  }
+}
+
+.form {
+  .label {
+    font-size: 12px;
+  }
+
+  .responseButtonRow {
+    margin-top: 16px;
+
+    button {
+      max-width: 100%;
+    }
+  }
+}
+
+.commentField {
+  margin-top: 8px;
+}

@@ -1,0 +1,42 @@
+div.text-field-root {
+  padding-left: 0;
+  border: 1px solid var(--input-border-color);
+
+  &.text-field-input-error {
+    border-color: var(--color-red);
+
+    .text-field-input {
+      color: var(--color-red);
+
+      &::placeholder {
+        color: var(--color-red);
+      }
+    }
+  }
+
+  .text-field-input {
+    height: 38px;
+    padding: 7px 11px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border-radius: var(--input-border-radius);
+
+    &::placeholder {
+      opacity: 1;
+      color: var(--color-gray-200);
+    }
+  }
+
+  .input-adornment:first-child {
+    height: 100%;
+    margin-right: 0;
+    padding: 8px 12px;
+    border-right: 1px solid var(--input-border-color);
+  }
+
+  & + .MuiFormHelperText-root {
+    margin: 5px 0 0;
+    font-size: 12px;
+    text-align: left;
+  }
+}

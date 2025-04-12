@@ -1,0 +1,58 @@
+.profilePhotoChange {
+  display: flex;
+  gap: 23px;
+}
+
+.photo {
+  display: flex;
+  flex-direction: column;
+
+  p {
+    &:nth-of-type(2) {
+      margin-top: 4px;
+      font-size: 14px;
+      color: var(--color-gray-200);
+    }
+  }
+}
+
+.photoActions {
+  display: flex;
+  gap: 8px;
+  margin-top: auto;
+
+  button {
+    background-color: transparent;
+
+    &:hover {
+      background-color: transparent;
+    }
+
+    &:first-of-type {
+      width: 206px;
+      border: 1px solid var(--color-gray-200);
+      color: var(--color-black-secondary);
+    }
+
+    &:last-of-type {
+      min-width: 32px;
+      padding: 0;
+      border: 1px solid var(--color-red);
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .profilePhotoChange {
+    gap: 10px;
+  }
+
+  .photoActions {
+    button {
+      &:first-of-type {
+        width: auto;
+        padding: 0 10px;
+      }
+    }
+  }
+}

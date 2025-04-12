@@ -1,0 +1,48 @@
+.paramsFilterContainer {
+  margin-top: 12px;
+  padding: 20px;
+}
+
+.paramsFilter {
+  margin-top: 16px;
+}
+
+.mobileContainer {
+  display: none;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 10px;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+
+  & > span {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .label {
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .mobileContainer {
+    display: flex;
+  }
+
+  .desktopContainer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mobileContainer {
+    & > span {
+      font-size: 14px;
+    }
+
+    .label {
+      font-weight: 500;
+    }
+  }
+}

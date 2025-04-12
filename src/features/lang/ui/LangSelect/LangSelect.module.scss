@@ -1,0 +1,88 @@
+.menuButton {
+  min-width: 60px;
+  gap: 8px;
+}
+
+.menu {
+  min-width: 64px;
+  margin-top: 12px;
+  padding: 5px 0;
+  background-color: var(--color-white);
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 24px 0px rgba(0, 32, 51, 0.12), 0px 4px 4px 0px rgba(0, 32, 51, 0.04);
+  z-index: 100;
+
+  &Item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 4px;
+    background-color: var(--color-white);
+    cursor: pointer;
+
+    &.active {
+      background-color: color-mix(in srgb, var(--color-primary), transparent 85%);
+    }
+  }
+}
+
+.accordionContainer {
+  display: none;
+
+  .accordion {
+    box-shadow: none;
+    background: transparent;
+    color: var(--color-white);
+    font-size: 16px;
+    padding: 10px;
+
+    .accordionSummary {
+      padding: 0;
+      background: transparent;
+      min-height: auto;
+
+      .accordionSummaryContent {
+        margin: 0;
+        min-height: auto;
+      }
+    }
+
+    .accordionDetails {
+      padding: 0;
+    }
+  }
+}
+
+.accordionList {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 7px;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 21px;
+    padding: 0 8px;
+    font-size: 14px;
+    transition: background 0.2s ease-in-out;
+    cursor: pointer;
+  }
+
+  .langSelected {
+    background: color-mix(in srgb, var(--color-primary), transparent 85%);
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .dropdown {
+    display: none;
+  }
+
+  .accordionContainer {
+    display: block;
+  }
+}

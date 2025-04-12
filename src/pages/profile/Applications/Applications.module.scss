@@ -1,0 +1,22 @@
+.createButtonRow {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+
+  button {
+    svg {
+      fill: var(--color-white);
+    }
+  }
+}
+
+.tabs {
+  margin-top: 24px;
+}
+
+.applicationsList {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-top: 32px;
+}

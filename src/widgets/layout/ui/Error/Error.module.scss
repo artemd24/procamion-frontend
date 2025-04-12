@@ -1,0 +1,44 @@
+.pageLayout {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    :global(.wrapper) {
+      flex-direction: column;
+      flex-grow: 1;
+
+      & > div {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        padding-top: 40px;
+        padding-bottom: 80px;
+      }
+    }
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.errorCode {
+  margin-top: 30px;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.errorText {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: center;
+}

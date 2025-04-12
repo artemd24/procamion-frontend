@@ -1,0 +1,38 @@
+.modal {
+  h4 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+.form {
+  min-width: 356px;
+  box-sizing: border-box;
+
+  p {
+    font-size: 14px;
+    color: var(--color-gray-200);
+    text-align: center;
+
+    &:nth-of-type(1) {
+      margin-top: 34px;
+    }
+
+    &:nth-of-type(2) {
+      margin-top: 14px;
+
+      button {
+        margin: 0 auto;
+        color: var(--color-gray-200);
+      }
+    }
+  }
+
+  button {
+    margin-top: 34px;
+  }
+}
+
+.codeField {
+  margin-top: 24px;
+}

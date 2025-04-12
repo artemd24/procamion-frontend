@@ -1,0 +1,46 @@
+.pac {
+  &-container {
+    margin-top: 8px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    box-shadow: var(--box-shadow);
+    font-family: var(--font-inter);
+    z-index: 10000;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 22px);
+    height: 40px;
+    padding: 0 11px;
+    border-top: 1px solid #d9d9d9;
+    font-family: var(--font-inter);
+    font-size: 16px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &-selected {
+      background: color-mix(in srgb, var(--color-primary), transparent 85%);
+    }
+
+    &:first-of-type {
+      border-top: none;
+    }
+
+    &-query {
+      font-size: 16px;
+    }
+  }
+
+  &-icon {
+    display: none;
+  }
+}

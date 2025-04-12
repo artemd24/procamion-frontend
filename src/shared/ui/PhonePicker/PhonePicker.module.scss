@@ -1,0 +1,44 @@
+.phonePicker {
+  width: 100%;
+
+  input {
+    padding: 7px 11px;
+    height: 38px;
+    box-sizing: border-box;
+  }
+
+  :global(.input-adornment) {
+    min-height: 38px;
+    padding: 10px 12px;
+    height: 100%;
+    margin-right: 0;
+    border-right: 1px solid var(--input-border-color);
+    box-sizing: border-box;
+  }
+
+  :global(.input-adornment button) {
+    padding: 0;
+  }
+
+  & > div {
+    padding-left: 0;
+    border: 1px solid var(--input-border-color);
+  }
+
+  &.error {
+    & > div {
+      border-color: var(--color-red);
+    }
+
+    :global(.input-adornment) {
+      border-color: var(--color-red);
+    }
+
+    p {
+      margin: 5px 0 0;
+      font-size: 12px;
+      color: var(--color-red);
+      text-align: left;
+    }
+  }
+}

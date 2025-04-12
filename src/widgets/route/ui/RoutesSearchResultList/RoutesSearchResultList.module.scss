@@ -1,0 +1,21 @@
+.routesSearchResultList {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.routesList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  li {
+    cursor: pointer;
+  }
+}
+
+.pagination {
+  margin-top: auto;
+  padding-top: 32px;
+}

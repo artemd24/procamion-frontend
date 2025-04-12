@@ -1,0 +1,48 @@
+.applicationsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.applicationCard {
+  padding: 16px 24px 8px 24px;
+  cursor: pointer;
+
+  &.applicationFinished {
+    padding-bottom: 16px;
+  }
+}
+
+.applicationCardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.applicationCardBottom {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.offersButton {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  height: 32px;
+  font-size: 14px;
+  color: var(--color-primary);
+}
+
+.pagination {
+  margin-top: auto;
+  padding-top: 32px;
+}
+
+@media screen and (max-width: 500px) {
+  .applicationCard {
+    padding: 16px 10px 8px 16px;
+  }
+}

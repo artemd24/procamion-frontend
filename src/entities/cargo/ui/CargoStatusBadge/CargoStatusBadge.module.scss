@@ -1,0 +1,34 @@
+.cargoStatusBadge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 4px;
+
+  span {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--color-white);
+  }
+}
+
+.black {
+  background: var(--color-black-primary);
+}
+
+.primary {
+  background: var(--color-primary);
+}
+
+.green {
+  background: var(--color-green);
+}
+
+.gray {
+  background: var(--color-gray-100);
+
+  span {
+    color: var(--color-black-secondary);
+  }
+}

@@ -1,0 +1,5 @@
+export { SignUpConfirmationPage } from './SignUpConfirmation'
+export { SignUpPage } from './SignUp'
+export { SignInPage } from './SignIn'
+export { PasswordRestorePage } from './PasswordRestore'
+export { NewPasswordPage } from './NewPassword'

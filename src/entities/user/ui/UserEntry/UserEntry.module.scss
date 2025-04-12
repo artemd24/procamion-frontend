@@ -1,0 +1,9 @@
+.userEntry {
+  display: flex;
+  gap: 16px;
+
+  a:nth-of-type(1) button {
+    color: var(--color-black-primary);
+    background-color: var(--color-white);
+  }
+}

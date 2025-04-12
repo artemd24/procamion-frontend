@@ -1,0 +1,18 @@
+:root {
+  --color-primary: #f59929;
+  --color-black-primary: #000000;
+  --color-black-secondary: #1d1d1d;
+  --color-white: #ffffff;
+  --color-green: #00b15a;
+  --color-red: #e03434;
+
+  --color-gray-100: #e8e8e8;
+  --color-gray-200: #b0b0b0;
+  --color-gray-300: #757575;
+
+  --input-border-radius: 4px;
+  --input-border-color: #d9d9d9;
+  --button-border-radius: 4px;
+
+  --box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.16);
+}

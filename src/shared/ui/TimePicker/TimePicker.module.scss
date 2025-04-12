@@ -1,0 +1,82 @@
+.timePicker {
+  & > div {
+    padding-right: 0;
+    border: 1px solid var(--input-border-color);
+    border-radius: var(--input-border-radius);
+  }
+
+  &.error {
+    border-color: var(--color-red);
+
+    input {
+      color: var(--color-red);
+
+      &::placeholder {
+        color: var(--color-red);
+      }
+    }
+  }
+
+  input {
+    height: 38px;
+    padding: 7px 11px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border-radius: var(--input-border-radius);
+
+    &::placeholder {
+      opacity: 1;
+      color: var(--color-gray-200);
+    }
+  }
+}
+
+.dialog {
+  :global(.MuiClock-pin),
+  :global(.MuiClockPointer-root),
+  :global(.MuiClockPointer-thumb) {
+    background-color: var(--color-primary);
+  }
+
+  :global(.MuiClockPointer-thumb) {
+    border: 16px solid var(--color-primary);
+  }
+
+  :global(.MuiClockNumber-root) {
+    color: var(--color-black-primary);
+  }
+
+  :global(.MuiClock-clock) {
+    background-color: var(--color-gray-100);
+  }
+}
+
+.toolbar {
+  button {
+    background-color: transparent;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}
+
+.actionBar {
+  button {
+    padding: 0 12px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    min-height: 32px;
+
+    &:first-of-type {
+      background: var(--color-white);
+      border: 1px solid var(--color-gray-200);
+      color: var(--color-black-primary);
+    }
+
+    &:last-of-type {
+      color: var(--color-white);
+    }
+  }
+}

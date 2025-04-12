@@ -1,0 +1,8 @@
+.currencySelect {
+  max-width: 96px;
+  width: 100%;
+
+  :global(div.MuiSelect-select) {
+    font-size: 22px;
+  }
+}

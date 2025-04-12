@@ -1,0 +1,12 @@
+.landing {
+  font-family: var(--font-roboto);
+
+  header {
+    position: fixed;
+    width: 100%;
+    border-bottom-right-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
+    height: 100px;
+    z-index: 100;
+  }
+}

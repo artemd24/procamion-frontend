@@ -1,0 +1,137 @@
+.section {
+  position: relative;
+  background: rgb(249 217 73);
+  padding-bottom: 5rem;
+  padding-top: 6rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: auto;
+  max-width: 680px;
+
+  & > h3 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+
+  & > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 280px;
+    width: 100%;
+    margin-top: 3rem;
+    padding: 1rem;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.75rem;
+    border: 1px solid #000;
+    border-radius: 0.5rem;
+    color: #000;
+    cursor: pointer;
+  }
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 1.25;
+    color: #000;
+  }
+}
+
+.line {
+  position: absolute;
+  top: 2.25rem;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+}
+
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  background: #000;
+  backdrop-filter: blur(24px);
+}
+
+.modalContent {
+  position: relative;
+  width: 24rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: rgb(37, 37, 35);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px;
+  box-sizing: border-box;
+}
+
+.closeButton {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  border-radius: 50%;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke,
+    opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 767px) {
+  .section {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+  }
+
+  .content {
+    gap: 0.75rem;
+
+    h3 {
+      font-size: 1rem;
+    }
+
+    button {
+      max-width: 200px;
+      margin-top: 1.75rem;
+      padding: 0.5rem;
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+    }
+  }
+
+  .heading {
+    h2 {
+      font-size: 26px;
+    }
+  }
+}

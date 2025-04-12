@@ -1,0 +1,29 @@
+.routeAutocomplete {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.switchButton {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+
+  &Center {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &End {
+    right: -3px;
+    transform: translateY(-50%);
+  }
+}

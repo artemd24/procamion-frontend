@@ -1,0 +1,46 @@
+.textareaContainer {
+  position: relative;
+}
+
+.textareaField {
+  width: 100%;
+  min-height: 100px;
+  padding: 12px;
+  border: 1px solid var(--input-border-color);
+  border-radius: var(--input-border-radius);
+  font-family: var(--font-inter);
+  font-size: 16px;
+  resize: none;
+  outline: none;
+  transition: border-color 0.2s ease-in-out;
+  box-sizing: border-box;
+
+  &::placeholder {
+    opacity: 1;
+    color: var(--color-gray-200);
+    transition: 0.2s ease-in-out;
+  }
+
+  &.error {
+    border-color: var(--color-red);
+
+    &::placeholder {
+      color: var(--color-red);
+    }
+  }
+}
+
+.maxSymbols {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--color-gray-200);
+}
+
+@media screen and (max-width: 500px) {
+  .textareaField {
+    min-height: 76px;
+  }
+}

@@ -1,0 +1,8 @@
+export { MainSection } from './MainSection/MainSection'
+export { Features } from './Features/Features'
+export { ProcessSteps } from './ProcessSteps/ProcessSteps'
+export { UserRoles } from './UserRoles/UserRoles'
+export { QuestionsForm } from './QuestionsForm/QuestionsForm'
+export { AboutVideo } from './AboutVideo/AboutVideo'
+export { EcologyCare } from './EcologyCare/EcologyCare'
+export { Tagline } from './Tagline/Tagline'

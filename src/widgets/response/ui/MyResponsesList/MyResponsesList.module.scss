@@ -1,0 +1,63 @@
+.applicationsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.applicationCard {
+  padding: 16px 24px 8px 24px;
+  cursor: pointer;
+}
+
+.applicationCardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.applicationCardBottom {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.pagination {
+  margin-top: auto;
+  padding-top: 32px;
+}
+
+.responseViewModeContainer {
+  label {
+    font-size: 14px;
+  }
+
+  p {
+    margin-top: 10px;
+  }
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 16px;
+
+  button {
+    min-width: auto;
+    padding: 0 12px;
+
+    &:first-of-type {
+      background: var(--color-white);
+      border: 1px solid var(--color-gray-200);
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .applicationCard {
+    padding: 16px 10px 8px 16px;
+  }
+}

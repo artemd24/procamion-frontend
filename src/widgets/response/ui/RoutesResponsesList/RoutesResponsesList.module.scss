@@ -1,0 +1,117 @@
+.routesResponsesList {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.routeCard {
+  padding: 16px 24px 8px 24px;
+}
+
+.routeCardTop {
+  border-bottom: 1px solid rgb(217, 217, 217);
+  padding-bottom: 14px;
+  margin-bottom: 8px;
+}
+
+.pagination {
+  margin-top: auto;
+  width: 100%;
+  padding-top: 32px;
+}
+
+.routeResponseActions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid rgb(217, 217, 217);
+}
+
+.responseBody {
+  display: flex;
+}
+
+.responseUser {
+  display: flex;
+  min-width: 250px;
+  padding-right: 24px;
+  border-right: 1px solid rgb(217, 217, 217);
+}
+
+.responseUserAvatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--color-gray-100);
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.responseUserInfo {
+  margin-left: 14px;
+
+  p {
+    &:first-of-type {
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    &:last-of-type {
+      margin-top: 4px;
+      font-size: 12px;
+      color: var(--color-gray-300);
+    }
+  }
+}
+
+.responseComment {
+  padding-left: 24px;
+
+  p {
+    &:first-of-type {
+      font-size: 12px;
+      color: var(--color-gray-300);
+    }
+
+    &:last-of-type {
+      margin-top: 8px;
+      font-size: 14px;
+      line-height: 150%;
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .responseBody {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .responseUser {
+    border-right: none;
+    padding-right: 0;
+  }
+
+  .responseComment {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .routeCard {
+    padding: 16px 10px 8px 16px;
+  }
+}

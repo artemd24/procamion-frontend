@@ -1,0 +1,25 @@
+.signUpConfirmForm {
+  display: flex;
+  flex-direction: column;
+
+  & > div {
+    margin-top: 24px;
+  }
+
+  button:last-of-type {
+    margin-top: 34px;
+  }
+
+  button:first-of-type {
+    margin-top: 8px;
+    color: var(--color-black-secondary);
+    margin-left: auto;
+  }
+
+  p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--color-gray-200);
+  }
+}

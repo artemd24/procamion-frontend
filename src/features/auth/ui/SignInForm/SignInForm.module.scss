@@ -1,0 +1,27 @@
+.signInForm {
+  display: flex;
+  flex-direction: column;
+
+  a {
+    margin-left: auto;
+    margin-top: 8px;
+    color: var(--color-black-secondary);
+  }
+
+  .submitButton {
+    margin-top: 34px;
+  }
+
+  & > p:last-of-type {
+    margin-top: 14px;
+    text-align: center;
+    color: var(--color-gray-200);
+  }
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 18px;
+}

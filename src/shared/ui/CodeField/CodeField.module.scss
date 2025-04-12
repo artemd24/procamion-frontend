@@ -1,0 +1,39 @@
+.codeField {
+  width: 100% !important;
+
+  & > div {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+
+    input {
+      width: 50px !important;
+      height: 40px !important;
+      border: 1px solid var(--input-border-color);
+      border-radius: var(--input-border-radius);
+      font-family: var(--font-inter);
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--color-black);
+
+      &:first-of-type,
+      &:last-of-type {
+        border-radius: var(--input-border-radius);
+      }
+
+      &:last-of-type {
+        border-right: 1px solid var(--input-border-color);
+      }
+
+      &:focus {
+        border: 1px solid var(--input-border-color);
+        caret-color: var(--color-gray-200);
+
+        & + input {
+          border-left: 1px solid var(--input-border-color);
+        }
+      }
+    }
+  }
+}

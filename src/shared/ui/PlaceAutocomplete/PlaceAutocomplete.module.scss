@@ -1,0 +1,63 @@
+.placeAutocomplete {
+  position: relative;
+
+  :global(.text-field-root) {
+    position: relative;
+    border: none;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 1px solid var(--input-border-color);
+      border-radius: var(--input-border-radius);
+      box-sizing: border-box;
+      transition: 0.2s ease-in-out;
+    }
+  }
+
+  :global(.text-field-root .text-field-input) {
+    height: 40px;
+  }
+
+  &.error {
+    :global(.text-field-root) {
+      &::before {
+        border-color: var(--color-red);
+      }
+    }
+  }
+
+  &.withValue {
+    :global(.text-field-root .text-field-input) {
+      padding-left: 12px + 24px + 12px;
+    }
+  }
+
+  :global(.text-field-root .input-adornment:first-child) {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    width: 24px;
+    height: 24px;
+    border-right: none;
+    padding: 0;
+    transform: translateY(-50%);
+  }
+
+  .hiddenField {
+    display: none;
+  }
+}
+
+.clearButton {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 50%;
+  margin-top: -9px;
+  right: 15px;
+  z-index: 50;
+  cursor: pointer;
+}

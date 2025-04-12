@@ -1,0 +1,22 @@
+.profileLayout {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.main {
+  display: flex;
+  flex-grow: 1;
+  gap: 40px;
+
+  &:global(.wrapper) {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}

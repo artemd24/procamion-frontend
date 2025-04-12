@@ -1,0 +1,210 @@
+.cargoCreateEditModal {
+  max-width: 822px;
+
+  h4 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    & > button {
+      max-width: 90px;
+      margin-top: 20px;
+      margin-left: auto;
+      padding: 0 12px;
+
+      span {
+        margin-left: 0;
+        margin-right: 3px;
+      }
+
+      svg {
+        fill: var(--color-white);
+      }
+    }
+
+    .label {
+      margin-bottom: 8px;
+      font-size: 14px;
+      line-height: 21px;
+      color: var(--color-gray-300);
+    }
+  }
+}
+
+.tabs {
+  margin-top: 16px;
+}
+
+.routeAndDate {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-top: 16px;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dateTimeRow {
+  display: flex;
+  gap: 8px;
+
+  &:first-of-type {
+    span {
+      margin-top: 31px;
+    }
+  }
+
+  &:last-of-type {
+    align-items: center;
+
+    span {
+      max-width: 150px;
+    }
+  }
+
+  & > * {
+    flex: 0 0 50%;
+  }
+
+  span {
+    font-size: 12px;
+    line-height: 110%;
+    color: var(--color-gray-200);
+  }
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-top: 20px;
+  padding: 16px 10px;
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--color-primary), transparent 85%);
+}
+
+.temperatureAndPallets {
+  display: flex;
+  gap: 40px;
+
+  :global(.text-field-root) {
+    background: var(--color-white);
+  }
+}
+
+.temperatureFieldRow {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  & > div {
+    width: 114px;
+  }
+
+  span {
+    font-size: 14px;
+    color: var(--color-gray-300);
+  }
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  .totalPrice {
+    width: 97px;
+
+    :global(.text-field-input) {
+      background: var(--color-white);
+    }
+  }
+}
+
+.priceFieldRow {
+  display: grid;
+  grid-template-columns: 26px 101px 96px;
+  gap: 8px;
+  align-items: center;
+
+  :global(.text-field-input),
+  :global(.MuiSelect-select) {
+    background: var(--color-white);
+  }
+
+  span {
+    font-size: 14px;
+    color: var(--color-gray-300);
+  }
+}
+
+.comment {
+  margin-top: 20px;
+}
+
+.error {
+  margin-top: 5px;
+  font-size: 12px;
+  color: red;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+  padding-top: 8px;
+  gap: 8px;
+}
+
+@media screen and (max-width: 850px) {
+  .routeAndDate,
+  .options {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .options {
+    margin-top: 10px;
+  }
+
+  .priceFieldRow {
+    grid-template-columns: 26px 1fr 96px;
+  }
+
+  .price {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .temperatureAndPallets {
+    gap: 8px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cargoCreateEditModal {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
+
+  .temperatureFieldRow {
+    gap: 3px;
+  }
+
+  .comment,
+  .cargoCreateEditModal form > button {
+    margin-top: 16px;
+  }
+}

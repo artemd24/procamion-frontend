@@ -1,0 +1,32 @@
+button.button:global(.MuiButtonBase-root) {
+  border-radius: var(--button-border-radius);
+  box-shadow: none;
+  font-weight: 400;
+  text-transform: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    box-shadow: none;
+  }
+
+  .spinner {
+    width: 30px !important;
+    height: 30px !important;
+    color: var(--color-white);
+  }
+
+  &:global(.MuiButton-sizeSmall) {
+    .spinner {
+      width: 20px !important;
+      height: 20px !important;
+    }
+  }
+
+  &:global(.MuiButton-sizeMedium) {
+    .spinner {
+      width: 25px !important;
+      height: 25px !important;
+    }
+  }
+}

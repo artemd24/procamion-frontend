@@ -1,0 +1,130 @@
+.section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background: rgb(245 245 245);
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  max-width: 1250px;
+  margin: auto;
+
+  & > h2 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 67.5px;
+    color: #000;
+  }
+}
+
+.userRoles {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2.5rem;
+}
+
+.userRole {
+  display: inline-flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  min-width: 410px;
+  background: #fff;
+  border: 1px solid rgb(28 25 23/ 0.3);
+  border-radius: 1rem;
+  gap: 1rem;
+  box-sizing: border-box;
+
+  h2 {
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+  }
+
+  &.shipper h2 span {
+    color: rgb(252 211 77);
+  }
+
+  &.carrier h2 span {
+    color: rgb(251 146 60);
+  }
+}
+
+.featuresList {
+  padding-left: 1.5rem;
+  line-height: 24px;
+  list-style: disc;
+}
+
+.or {
+  display: flex;
+  align-items: center;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 500;
+  color: rgb(115 115 115);
+}
+
+@media screen and (max-width: 1023px) {
+  .container {
+    gap: 1.75rem;
+  }
+
+  .userRole {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 360px;
+    width: 100%;
+    min-width: auto;
+
+    h2 {
+      font-size: 45px;
+      line-height: 67.5px;
+    }
+  }
+
+  .userRoles {
+    gap: 1.5rem;
+  }
+
+  .or {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    & > h2 {
+      font-size: 26px;
+      line-height: 39px;
+    }
+  }
+
+  .userRoles {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .userRole {
+    h2 {
+      font-size: 22px;
+      line-height: 33px;
+      text-align: center;
+    }
+  }
+}

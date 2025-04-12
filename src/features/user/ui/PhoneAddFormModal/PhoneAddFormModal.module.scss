@@ -1,0 +1,25 @@
+.modal {
+  h4 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+.form {
+  max-width: 404px;
+  margin-top: 34px;
+
+  p {
+    font-size: 14px;
+    color: var(--color-gray-200);
+    text-align: center;
+  }
+
+  .phoneField {
+    margin-top: 24px;
+  }
+
+  & > button:last-of-type {
+    margin-top: 34px;
+  }
+}

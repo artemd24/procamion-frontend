@@ -1,0 +1,189 @@
+.form {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+
+  & > button {
+    min-width: 297px;
+    font-family: var(--font-roboto);
+    font-size: 22px;
+    line-height: 26px;
+    height: 60px;
+  }
+}
+
+.fields {
+  display: flex;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid rgb(29, 29, 27);
+  overflow: hidden;
+}
+
+.field {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  flex-grow: 1;
+
+  & > div {
+    width: 100%;
+
+    & > div {
+      height: 100%;
+    }
+
+    button {
+      right: 5px;
+    }
+  }
+
+  :global(.text-field-root) {
+    height: 100%;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  :global(.input-adornment:first-child) {
+    background: #fff;
+  }
+
+  :global(.text-field-root .text-field-input) {
+    width: 100%;
+    height: 100%;
+    padding-left: 44px;
+    padding-right: 30px;
+    font-family: var(--font-roboto);
+    font-size: 18px;
+  }
+}
+
+.icon {
+  position: absolute;
+  width: 25px;
+  height: 24px;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+}
+
+.datePickerContainer {
+  & > div > div {
+    border: none;
+
+    input {
+      padding-left: 44px;
+    }
+
+    & > div {
+      display: none;
+    }
+  }
+}
+
+.tabsContainer {
+  & > p {
+    display: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+  }
+}
+
+.tabs {
+  display: flex;
+  max-width: 390px;
+  width: 100%;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 40px;
+    font-family: var(--font-roboto);
+    font-size: 20px;
+    color: #000;
+    background: rgba(255, 255, 255, 0.4);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+
+    svg path {
+      stroke: #000;
+      transition: 0.2s ease-in-out;
+    }
+
+    &.tabActive {
+      background: #000;
+      color: #fff;
+
+      svg path {
+        stroke: #fff;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1071px) {
+  .form {
+    flex-direction: column;
+
+    & > button {
+      height: 50px;
+    }
+  }
+
+  .field {
+    height: 44px;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .fields {
+    flex-direction: column;
+    gap: 5px;
+    border: none;
+    background: transparent;
+  }
+
+  .field {
+    border: 1px solid #000;
+    border-radius: 10px;
+    background: #fff;
+    overflow: hidden;
+
+    & > div {
+      button {
+        right: 15px;
+      }
+    }
+  }
+
+  .tabsContainer {
+    border-radius: 10px;
+    background: #fff;
+
+    & > p {
+      display: block;
+    }
+  }
+
+  .tabs {
+    max-width: 100%;
+    background: #fff;
+
+    button {
+      height: 34px;
+      font-size: 16px;
+      background: rgb(217, 217, 217);
+    }
+  }
+}

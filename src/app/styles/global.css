@@ -1,0 +1,49 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: var(--font-inter);
+  font-size: 14px;
+  scroll-behavior: smooth;
+  padding-right: 0 !important;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  background: transparent;
+  border: none;
+  font-family: var(--font-inter);
+  font-size: 14px;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.colorGray {
+  color: var(--color-gray-300);
+}
+
+input[type='number'] {
+  caret: none;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}

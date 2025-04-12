@@ -1,0 +1,40 @@
+.phoneEdit {
+  display: flex;
+  gap: 5px;
+
+  .phoneField {
+    background: rgba(217, 217, 217, 0.15);
+
+    & > div {
+      border-color: #d9d9d9;
+    }
+  }
+
+  .editButton {
+    min-width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 1px solid var(--color-gray-200);
+    background: transparent;
+
+    &:hover {
+      border-color: var(--color-gray-200);
+      background-color: inherit;
+    }
+  }
+
+  .addButton {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 16px;
+    color: var(--color-primary);
+  }
+
+  .error {
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: left;
+    color: var(--color-red);
+  }
+}

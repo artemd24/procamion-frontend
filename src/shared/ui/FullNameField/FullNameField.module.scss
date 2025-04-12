@@ -1,0 +1,33 @@
+.fullNameField {
+  display: flex;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 48px;
+  border-radius: 4px 0px 0px 4px;
+  border: 1px solid var(--input-border-color);
+  border-right: none;
+
+  &.error {
+    border-color: var(--color-red);
+  }
+}
+
+.fields {
+  div:first-of-type {
+    :global(div.text-field-root) {
+      border-radius: 0 4px 0 0;
+      border-bottom: none;
+    }
+  }
+
+  div:last-of-type {
+    :global(div.text-field-root) {
+      border-radius: 0 0 4px 0;
+    }
+  }
+}

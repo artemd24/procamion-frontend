@@ -1,0 +1,35 @@
+div.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  margin: 0 15px;
+  padding: 24px;
+  border: 1px solid rgb(217, 217, 217);
+  border-radius: 4px;
+  background: var(--color-white);
+  outline: none;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.closeButton {
+  width: 24px;
+  height: 24px;
+}
+
+div.backdrop {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 500px) {
+  .content {
+    padding: 15px;
+  }
+}

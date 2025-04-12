@@ -1,0 +1,18 @@
+.counter {
+  :global(.text-field-root) {
+    gap: 8px;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+
+  :global(.text-field-root .text-field-input) {
+    padding: 7px 0;
+    text-align: center;
+  }
+
+  button {
+    svg {
+      fill: var(--color-gray-300);
+    }
+  }
+}

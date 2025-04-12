@@ -1,0 +1,98 @@
+.profileEditForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  margin-top: 44px;
+
+  &Right {
+    p:last-of-type {
+      margin-top: 10px;
+    }
+  }
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+  margin-top: 44px;
+}
+
+.infoColumn {
+  & > p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 26px;
+
+  li {
+    label {
+      line-height: 24px;
+
+      & + div {
+        margin-top: 8px;
+      }
+    }
+  }
+}
+
+.checkboxLabel {
+  margin-top: 15px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 37px;
+  margin-top: 80px;
+
+  button {
+    &:first-of-type {
+      width: 107px;
+    }
+
+    &:last-of-type {
+      width: 200px;
+    }
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 30px;
+  }
+
+  .infoList {
+    gap: 14px;
+    margin-top: 14px;
+  }
+
+  .actions {
+    gap: 21px;
+    margin-top: 40px;
+
+    button {
+      &:first-of-type {
+        width: 107px;
+      }
+
+      &:last-of-type {
+        width: 166px;
+      }
+    }
+  }
+}
